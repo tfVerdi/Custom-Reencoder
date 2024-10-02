@@ -1,0 +1,10 @@
+{
+    "global": [
+      {
+        "ffmpeg_path": "C:\\Users\\verdi\\ffmpeg\\ffmpeg.exe",
+        "handbrakeCLI_path": "D:\\TF2b\\melies_output\\HandBrakeCLI.exe",
+        "input_file_path": "D:\\TF2b\\melies_output",
+        "output_file_path": "D:\\TF2b\\processed_output\\"
+      }
+    ]
+  }
