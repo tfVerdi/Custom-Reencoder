@@ -63,7 +63,7 @@ if __name__ == "__main__":
             Recode(video, output_name)
             os.remove(video + "\\take0000\\" + output_name)
         videos_remaining -= 1
-        videos_remaining[video] = new_path
+        directory_entries[video] = new_path
 
     PrintRemaining(videos_remaining)
     
