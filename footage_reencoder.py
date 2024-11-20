@@ -38,15 +38,11 @@ def Recode(video_input_path: str, output_name: str, handbrakeCLI_path: str = han
     subprocess.run(args=command)
 
 def PrintRemaining(videos_remaining: int) -> None:
+    progress_msg = f"Video done! {videos_remaining} remaining :)"
     print(f"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
     print(f"@                                              @")
     print(f"@                                              @")
-    if (videos_remaining // 10) == 0:
-        print(f"@         Video done! {videos_remaining} remaining :)           @")
-    elif (videos_remaining // 100) > 0:
-        print(f"@       Video done! {videos_remaining} remaining :)           @")
-    elif (videos_remaining // 10) > 0:
-        print(f"@       Video done! {videos_remaining} remaining :)            @")
+    print( "@"         + f"{progress_msg:^46}" +          "@")
     print(f"@                                              @")
     print(f"@                                              @")
     print(f"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
